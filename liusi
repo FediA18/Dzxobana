@@ -6,7 +6,7 @@ namespace ParallelResistors
     {
         static void Main(string[] args)
         {
-            // Ввод сопротивлений с консоли
+          
             Console.WriteLine("Введите сопротивление R1:");
             double R1 = Convert.ToDouble(Console.ReadLine());
 
@@ -16,10 +16,10 @@ namespace ParallelResistors
             Console.WriteLine("Введите сопротивление R3:");
             double R3 = Convert.ToDouble(Console.ReadLine());
 
-            // Вычисление сопротивления соединения
+
             double R = 1 / (1 / R1 + 1 / R2 + 1 / R3);
 
-            // Вывод результата
+
             Console.WriteLine($"Сопротивление соединения: {R:F2} Ом");
 
             Console.ReadKey(); // Пауза для просмотра результата
